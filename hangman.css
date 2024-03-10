@@ -1,0 +1,153 @@
+html,
+      body {
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .container {
+        background-image: url("./bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        color: rgb(182, 182, 213);
+      }
+
+      @keyframes example {
+        0% {
+          left: 0px;
+        }
+        25% {
+          left: 400px;
+        }
+        50% {
+          left: 400px;
+        }
+        75% {
+          left: 400px;
+          right: 0px;
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      #gameOver {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        font-weight: bold;
+        color: red;
+      }
+      #selectoption {
+        font-size: 20px;
+        font-weight: bold;
+        opacity: 2;
+        color: rgb(36, 51, 54);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .form {
+        border: 1px solid black;
+        width: 500px;
+        height: 550px;
+        margin: 70px auto 0;
+        text-align: center;
+        margin: 10px auto 0;
+
+        background-color: white;
+        position: relative;
+        top: 15%;
+        animation-name: example;
+        animation-duration: 4s;
+      }
+      .catagory {
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        border-radius: 10px;
+      }
+      #selectbtn {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px;
+      }
+      #hangbox {
+        border: 7px solid purple;
+        width: 350px;
+        height: 200px;
+        margin: auto;
+      }
+      #keyboard {
+        width: 70%;
+        margin: 20px auto;
+      }
+      #keyboard button {
+        margin: 5px;
+        font-size: 18px;
+        border: 1px solid green;
+        color: green;
+      }
+      #inputLine {
+        height: 10px;
+        margin: 20px;
+      }
+      #inputLine label {
+        margin: 5px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .stick {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 210px;
+        right: 94px;
+        border: 1px solid red;
+        width: 39px;
+        height: 150px;
+        visibility: hidden;
+      }
+
+      .stick .middle {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 19px;
+        left: 1px;
+      }
+      .audience {
+        position: relative;
+        width: 100px;
+        height: 150px;
+        left: 100px;
+        bottom: 150px;
+        border: 1px solid red;
+      }
+      .running {
+        height: 40px;
+        width: 350px;
+        margin: 30px auto 0;
+      }
+      .running img {
+        width: 20px;
+        height: 40px;
+        float: left;
+      }
+      .keybtn {
+        margin: 5px;
+        font-size: 50px;
+        font-weight: bold;
+        border-radius: 50%;
+        background-image: -moz-linear-gradient();
+      }
+   
